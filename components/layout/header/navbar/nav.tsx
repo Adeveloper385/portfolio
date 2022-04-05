@@ -26,6 +26,10 @@ const StyledLinks = styled.div`
       a {
         padding: 10px;
 
+        &:hover {
+            color: var(--green)
+          }
+
         &::before {
           content: "*";
           margin-right: 5px;

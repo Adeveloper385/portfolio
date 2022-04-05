@@ -33,6 +33,13 @@ export default createGlobalStyle`
     transition: var(--transition);
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+  }
+
   #root {
     min-height 100vh;
     display: grid;

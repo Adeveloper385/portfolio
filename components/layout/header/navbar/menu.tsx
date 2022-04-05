@@ -152,6 +152,10 @@ const StyledSideBar = styled.aside<Props>`
       width: 100%;
       padding: 3px 20px 20px;
 
+      &:hover {
+          color: var(--green)
+        }
+
       &::before {
         content: "*";
         margin-right: 5px;

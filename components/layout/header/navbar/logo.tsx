@@ -17,11 +17,12 @@ const StyledLogo = styled.div`
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    border: 2px solid var(--green);
+    border: 3px solid var(--green);
     border-radius: 50%;
     text-decoration: none;
-    font-size: 2rem;
-    padding: .3rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .2rem .8rem;
   }
 `;
 
