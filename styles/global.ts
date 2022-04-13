@@ -5,6 +5,28 @@ export default createGlobalStyle`
     box-sizing: inherit;
   }
 
+  ::-webkit-scrollbar {
+    width: 5px
+  }
+
+  ::-webkit-scrollbar-track {
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--slate);
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+  }
+
+  ::selection {
+    background-color: var(--lightest-navy);
+    color: var(--lightest-slate);
+  }
+
   html {
     box-sizing: border-box;
     width: 100%;
@@ -17,11 +39,17 @@ export default createGlobalStyle`
     min-heigth: 100%;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    background: #333;
+    background: #0B1114;
     color: #bbb;
     font-family: sans-serif;
     font-size: 20px;
     line-height: 1.3;
+  }
+
+  section {
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
   }
 
   a {
@@ -40,6 +68,12 @@ export default createGlobalStyle`
     line-height: 1.1;
   }
 
+  p {
+    margin: 20px 0 0;
+    max-width: 700px;
+    color: var(--slate);
+  }
+
   #root {
     min-height 100vh;
     display: grid;
@@ -48,6 +82,7 @@ export default createGlobalStyle`
   }
 
   :root {
+    --background: #0B1114;
     --dark-navy: #020c1b;
     --navy: #0a192f;
     --light-navy: #112240;
@@ -58,7 +93,7 @@ export default createGlobalStyle`
     --light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
-    --green: #64ffda;
+    --green: #01E776;
     --green-tint: rgba(100,255,218,0.1);
     --pink: #f57dff;
     --blue: #57cbff;

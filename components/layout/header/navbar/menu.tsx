@@ -109,7 +109,7 @@ const StyledSideBar = styled.aside<Props>`
     width: min(75vw, 400px);
     height: 100vh;
     outline: 0px;
-    background-color: #333;
+    background-color: #0B1114;
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
     z-index: 9;
     transform: ${({ open }) =>
@@ -187,22 +187,22 @@ export default function Menu() {
             <ol>
               <li>
                 <Link href="#about">
-                  <a>Sobre mi</a>
+                  <a onClick={() => setIsMenuOpen(!isMenuOpen)}>Sobre mi</a>
                 </Link>
               </li>
               <li>
                 <Link href="#jobs">
-                  <a>Experiencia</a>
+                  <a onClick={() => setIsMenuOpen(!isMenuOpen)}>Experiencia</a>
                 </Link>
               </li>
               <li>
-                <Link href="projects">
-                  <a>Trabajo</a>
+                <Link href="#projects">
+                  <a onClick={() => setIsMenuOpen(!isMenuOpen)}>Trabajo</a>
                 </Link>
               </li>
               <li>
-                <Link href="contact">
-                  <a>Contacto</a>
+                <Link href="#contact">
+                  <a onClick={() => setIsMenuOpen(!isMenuOpen)}>Contacto</a>
                 </Link>
               </li>
               <Button text="Resume" />

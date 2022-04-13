@@ -32,6 +32,7 @@ const StyledIntroSection = styled.section`
   p {
     margin: 20px 0 0;
     max-width: 700px;
+    color: var(--slate);
   }
 `;
 

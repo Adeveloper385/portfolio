@@ -31,7 +31,7 @@ const StyledLinks = styled.div`
           }
 
         &::before {
-          content: "*";
+          content: "-";
           margin-right: 5px;
           color: var(--green);
           font-size: var(--fz-xxs);
@@ -61,12 +61,12 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="projects">
+          <Link href="#projects">
             <a>Trabajo</a>
           </Link>
         </li>
         <li>
-          <Link href="contact">
+          <Link href="#contact">
             <a>Contacto</a>
           </Link>
         </li>
