@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface Props {
   children: string;
+  style?: object;
 }
 
 const StyledH2 = styled.h2`

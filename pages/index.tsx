@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import Intro from "../components/sections/intro";
 import About from "../components/sections/about";
 import Jobs from '../components/sections/jobs'
+import Projects from '../components/sections/projects'
 
 const StyledMainContainer = styled.main`
   padding: 0 150px;
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
             <Intro />
             <About />
             <Jobs />
+            <Projects />
           </StyledMainContainer>
         </Layout>
       </div>

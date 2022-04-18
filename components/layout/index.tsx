@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Header from './header'
 import Side from './sideElement'
+import Footer from './footer'
 
 declare interface AppProps {
   children: JSX.Element;
@@ -18,6 +19,7 @@ export default function Layout({ children }: AppProps) {
       <Header />
       <Side /> 
       <div id="content">{children}</div>
+      <Footer />
     </StyledLayout>
   );
 }

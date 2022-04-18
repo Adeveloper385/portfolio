@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import styled from "styled-components";
 import Heading from "../heading";
@@ -12,7 +13,7 @@ interface TabButton {
   selected: boolean;
 }
 
-const StyledSection = styled.section`
+const StyledJobs = styled.section`
   max-width: 700px;
 
   .inner {
@@ -156,7 +157,16 @@ export default function Jobs() {
   const [panel, setPanel] = useState<number>(1);
 
   return (
-    <StyledSection id="jobs">
+    <StyledJobs
+      id="jobs"
+      style={{
+        visibility: "visible",
+        opacity: 1,
+        transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+        transition:
+          "opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s",
+      }}
+    >
       <Heading>He trabajado en</Heading>
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs">
@@ -189,7 +199,9 @@ export default function Jobs() {
               <h3>
                 <span>{job}</span> -{" "}
                 <span className="bussiness">
-                  <a href={bussiness.link}>{bussiness.name}</a>
+                  <Link href={bussiness.link}>
+                    <a target="_blank">{bussiness.name}</a>
+                  </Link>
                 </span>
               </h3>
               <p className="date">{date}</p>
@@ -204,6 +216,6 @@ export default function Jobs() {
           ))}
         </StyledTabPanels>
       </div>
-    </StyledSection>
+    </StyledJobs>
   );
 }
